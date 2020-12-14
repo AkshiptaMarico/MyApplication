@@ -1,0 +1,803 @@
+{
+	"info": {
+		"_postman_id": "c5e4db34-ec60-418c-9900-3466729d7ea0",
+		"name": "Wrenchub",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CheckIfUserActivated",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "MOBILE_NO",
+							"value": "8655571666",
+							"type": "text"
+						},
+						{
+							"key": "TOKEN",
+							"value": "ABCD",
+							"type": "text"
+						},
+						{
+							"key": "NAME",
+							"value": "Niketa Joshi",
+							"type": "text"
+						},
+						{
+							"key": "EMAIL",
+							"value": "nike2807@gmail.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "Wrenchub-env.eba-uxjrdtae.us-west-2.elasticbeanstalk.com/GARAGE/CheckIfUserActivated",
+					"host": [
+						"Wrenchub-env",
+						"eba-uxjrdtae",
+						"us-west-2",
+						"elasticbeanstalk",
+						"com"
+					],
+					"path": [
+						"GARAGE",
+						"CheckIfUserActivated"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SaveProfile",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "NAME",
+							"value": "Siraj Auto Garaj",
+							"type": "text"
+						},
+						{
+							"key": "CONTACT_NUMBER",
+							"value": "9323855183",
+							"type": "text"
+						},
+						{
+							"key": "ALTERNATE_CONTACT_NUMBER",
+							"value": "9323011521",
+							"type": "text"
+						},
+						{
+							"key": "ADDRESS",
+							"value": "201 A Wing, Arihant Tower, Saibaba Nagar, mira Road",
+							"type": "text"
+						},
+						{
+							"key": "PAN",
+							"value": "DPJPS5990L",
+							"type": "text"
+						},
+						{
+							"key": "PAN_UPLOAD",
+							"value": "abc.jpg",
+							"type": "text"
+						},
+						{
+							"key": "GUMASTHA",
+							"value": "ABCDEFGH",
+							"type": "text"
+						},
+						{
+							"key": "GUMASTHA_UPLOAD",
+							"value": "abc.jpg",
+							"type": "text"
+						},
+						{
+							"key": "GSTIN",
+							"value": "AZNQPHG67HJN",
+							"type": "text"
+						},
+						{
+							"key": "GSTIN_UPLOAD",
+							"value": "abc.jpg",
+							"type": "text"
+						},
+						{
+							"key": "OWNER_NAME",
+							"value": "SIRAJ",
+							"type": "text"
+						},
+						{
+							"key": "OWNER_CONTACT",
+							"value": "8655508666",
+							"type": "text"
+						},
+						{
+							"key": "OWNER_ADDRESS",
+							"value": "201 A Wing, Arihant Tower, Saibaba Nagar, mira Road",
+							"type": "text"
+						},
+						{
+							"key": "OWN_AADHAR_UPLOAD",
+							"value": "abc.jpg",
+							"type": "text"
+						},
+						{
+							"key": "OWN_PAN_UPLOAD",
+							"value": "abc.jpg",
+							"type": "text"
+						},
+						{
+							"key": "DAILY_APP_BANDWIDTH",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "PLAN_ID",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "PLAN_EXPIRY_DATE",
+							"value": "2019-04-28T14:45:15",
+							"type": "text"
+						},
+						{
+							"key": "TOKEN",
+							"value": "ABCD",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://www.wrenchub.com/GARAGE/SaveProfile",
+					"protocol": "https",
+					"host": [
+						"www",
+						"wrenchub",
+						"com"
+					],
+					"path": [
+						"GARAGE",
+						"SaveProfile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RetrieveProfile",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "TOKEN",
+							"value": "ABCD",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://www.wrenchub.com/GARAGE/RetrieveProfile",
+					"protocol": "https",
+					"host": [
+						"www",
+						"wrenchub",
+						"com"
+					],
+					"path": [
+						"GARAGE",
+						"RetrieveProfile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RetrieveDashboardData",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/GARAGE/RetrieveDashboardData",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"GARAGE",
+						"RetrieveDashboardData"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RetrieveAllAppointment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "TOKEN",
+							"value": "ABCD",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://www.wrenchub.com/GARAGE/RetrieveAllAppointment",
+					"protocol": "https",
+					"host": [
+						"www",
+						"wrenchub",
+						"com"
+					],
+					"path": [
+						"GARAGE",
+						"RetrieveAllAppointment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RetrieveAppointmentDetailById",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://www.wrenchub.com/GARAGE/RetrieveAppointmentDetailById?TOKEN=ABCD&APPOINTMENT_ID=1",
+					"protocol": "https",
+					"host": [
+						"www",
+						"wrenchub",
+						"com"
+					],
+					"path": [
+						"GARAGE",
+						"RetrieveAppointmentDetailById"
+					],
+					"query": [
+						{
+							"key": "TOKEN",
+							"value": "ABCD"
+						},
+						{
+							"key": "APPOINTMENT_ID",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateAppointmentStatus",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "TOKEN",
+							"value": "ABCD",
+							"type": "text"
+						},
+						{
+							"key": "APPOINTMENT_ID",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "STATUS_ID",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://www.wrenchub.com/GARAGE/UpdateAppointmentStatus",
+					"protocol": "https",
+					"host": [
+						"www",
+						"wrenchub",
+						"com"
+					],
+					"path": [
+						"GARAGE",
+						"UpdateAppointmentStatus"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SaveNewAd",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"TOKEN\":\"ABCD\",\r\n    \"MANUFACTURER_ID\": \"2\",\r\n    \"MODEL_ID\": \"3\",\r\n    \"YEAR\": \"2020\",\r\n    \"IMAGE\":\"abc.jpg\",\r\n    \"ASKING_PRICE\": \"20000\",\r\n    \"KMS_DRIVEN\": \"4000\",\r\n    \"IS_NEGOTIABLE\": \"0\",\r\n    \"DESCRIPTION\":\"Good To use\",\r\n    \"TITLE\":\"Bajaj Avenger 220R\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.wrenchub.com/SaveNewAd",
+					"protocol": "https",
+					"host": [
+						"www",
+						"wrenchub",
+						"com"
+					],
+					"path": [
+						"SaveNewAd"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FetchVehiclesDetailById",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "TOKEN",
+							"value": "ABCD",
+							"type": "text"
+						},
+						{
+							"key": "BUY_SELL_ID",
+							"value": "4",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://www.wrenchub.com/FetchVehiclesDetailById",
+					"protocol": "https",
+					"host": [
+						"www",
+						"wrenchub",
+						"com"
+					],
+					"path": [
+						"FetchVehiclesDetailById"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FetchVehiclesList",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "TOKEN",
+							"value": "ABCD",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://www.wrenchub.com/FetchVehiclesList",
+					"protocol": "https",
+					"host": [
+						"www",
+						"wrenchub",
+						"com"
+					],
+					"path": [
+						"FetchVehiclesList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FetchMyAds",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "TOKEN",
+							"value": "ABCD",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://www.wrenchub.com/FetchMyAds",
+					"protocol": "https",
+					"host": [
+						"www",
+						"wrenchub",
+						"com"
+					],
+					"path": [
+						"FetchMyAds"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UploadFile",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "DOC",
+							"type": "file",
+							"src": "/C:/Users/Boltc/OneDrive/Pictures/Screenshots/2019-11-10.png"
+						},
+						{
+							"key": "TOKEN",
+							"value": "ABCD",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "https://www.wrenchub.com/COMMON/uploadDocument",
+					"protocol": "https",
+					"host": [
+						"www",
+						"wrenchub",
+						"com"
+					],
+					"path": [
+						"COMMON",
+						"uploadDocument"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "fetchManufacturer",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.wrenchub.com/COMMON/fetchManufacturer",
+					"protocol": "https",
+					"host": [
+						"www",
+						"wrenchub",
+						"com"
+					],
+					"path": [
+						"COMMON",
+						"fetchManufacturer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "fetchModelByManufacturer",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.wrenchub.com/COMMON/fetchModelByManufacturer?MANUFACTURER_ID=1",
+					"protocol": "https",
+					"host": [
+						"www",
+						"wrenchub",
+						"com"
+					],
+					"path": [
+						"COMMON",
+						"fetchModelByManufacturer"
+					],
+					"query": [
+						{
+							"key": "MANUFACTURER_ID",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FetchProductList",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "CATEGORY_ID",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "TOKEN",
+							"value": "ABCD",
+							"type": "text"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.wrenchub.com/FetchProductList",
+					"protocol": "https",
+					"host": [
+						"www",
+						"wrenchub",
+						"com"
+					],
+					"path": [
+						"FetchProductList"
+					],
+					"query": [
+						{
+							"key": "CATEGORY_ID",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "TOKEN",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FetchProductDetail",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "PRODUCT_ID",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://www.wrenchub.com/FetchProductDetail",
+					"protocol": "https",
+					"host": [
+						"www",
+						"wrenchub",
+						"com"
+					],
+					"path": [
+						"FetchProductDetail"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FetchCategoryList",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SaveOwnRequirement",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"TOKEN\":\"ABCD\",\r\n    \"DESCRIPTION\":\"Need Bolt for RX 100\",\r\n    \"COMMENTS\":\"NEED ASAP\",\r\n    \"Images\": [\r\n        {\r\n            \"NAME\":\"ABC.jpg\"\r\n        },\r\n        {\r\n            \"NAME\":\"IJK.jpg\"\r\n        },\r\n        {\r\n            \"NAME\":\"EFG.jpg\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/SaveOwnRequirement",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"SaveOwnRequirement"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddProductToCart",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"TOKEN\":\"ABCD\",\r\n    \"PRODUCT_ID\":\"1\",\r\n    \"QUANTITY\":\"2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/AddToCart",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"AddToCart"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteCartItem",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"TOKEN\":\"ABCD\",\r\n    \"ITEM_ID\":\"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/RemoveFromCart",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"RemoveFromCart"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "IncreaseCartItemQuantity",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"TOKEN\":\"ABCD\",\r\n    \"ITEM_ID\":\"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/IncreaseQuantity",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"IncreaseQuantity"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DecreaseCartItemQuantity",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"TOKEN\":\"ABCD\",\r\n    \"ITEM_ID\":\"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/DecreaseQuantity",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"DecreaseQuantity"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FetchCart",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"TOKEN\":\"ABCD\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/FetchCart",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"FetchCart"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

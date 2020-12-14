@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nsvDetails"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pale_lilac1"
+    android:fillViewport="true"
+    android:padding="10dp"
+    android:scrollbars="vertical"
+    tools:context=".activities.SellOrBuyBikeDetailsActivity">
+
+    <LinearLayout
+        android:id="@+id/llDetails1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/pale_lilac1"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ivDetailsBike"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@color/pale_lilac"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/tvDetailsAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@color/transparent"
+            android:maxLines="3"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:id="@+id/llDetails2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvDetailsName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:gravity="center|start"
+                android:maxLines="3"
+                android:textColor="@color/darkish_blue"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tvDetailsLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="3"
+                android:background="@color/transparent"
+                android:gravity="center"
+                android:maxLines="3"
+                android:textColor="@color/darkish_blue"
+                android:textSize="15sp"
+                tools:ignore="RtlHardcoded" />
+            <ImageView
+                android:src="@drawable/ic_org_location_pin"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="5dp"
+            android:background="@color/light_blue" />
+
+        <TextView
+            android:id="@+id/tvDetailsDescriptionHeading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@color/transparent"
+            android:maxLines="3"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvDetailsYear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@color/transparent"
+            android:maxLines="3"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tvDetailsRegisterNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@color/transparent"
+            android:maxLines="3"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tvDetailsKmDriven"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@color/transparent"
+            android:maxLines="3"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tvDetailsDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/transparent"
+            android:maxLines="3"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tvDetailsAdId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@color/transparent"
+            android:maxLines="3"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tvDetailsReportAd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@color/transparent"
+            android:maxLines="3"
+            android:textColor="@color/tangerine"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btnDetailsCall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/rounded_cornor_blue"
+            android:gravity="center"
+            android:maxLines="3"
+            android:padding="12dp"
+            android:text="@string/str_call_"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,563 @@
+{
+	"info": {
+		"_postman_id": "c5e4db34-ec60-418c-9900-3466729d7ea0",
+		"name": "Wrenchub",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CheckIfUserActivated",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "MOBILE_NO",
+							"value": "8655571666",
+							"type": "text"
+						},
+						{
+							"key": "TOKEN",
+							"value": "ABCD",
+							"type": "text"
+						},
+						{
+							"key": "NAME",
+							"value": "Niketa Joshi",
+							"type": "text"
+						},
+						{
+							"key": "EMAIL",
+							"value": "nike2807@gmail.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://Wrenchub-env.eba-uxjrdtae.us-west-2.elasticbeanstalk.com/GARAGE/CheckIfUserActivated",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"GARAGE",
+						"CheckIfUserActivated"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SaveProfile",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "NAME",
+							"value": "Siraj Auto Garaj",
+							"type": "text"
+						},
+						{
+							"key": "CONTACT_NUMBER",
+							"value": "9323855183",
+							"type": "text"
+						},
+						{
+							"key": "ALTERNATE_CONTACT_NUMBER",
+							"value": "9323011521",
+							"type": "text"
+						},
+						{
+							"key": "ADDRESS",
+							"value": "201 A Wing, Arihant Tower, Saibaba Nagar, mira Road",
+							"type": "text"
+						},
+						{
+							"key": "PAN",
+							"value": "DPJPS5990L",
+							"type": "text"
+						},
+						{
+							"key": "PAN_UPLOAD",
+							"value": "abc.jpg",
+							"type": "text"
+						},
+						{
+							"key": "GUMASTHA",
+							"value": "ABCDEFGH",
+							"type": "text"
+						},
+						{
+							"key": "GUMASTHA_UPLOAD",
+							"value": "abc.jpg",
+							"type": "text"
+						},
+						{
+							"key": "GSTIN",
+							"value": "AZNQPHG67HJN",
+							"type": "text"
+						},
+						{
+							"key": "GSTIN_UPLOAD",
+							"value": "abc.jpg",
+							"type": "text"
+						},
+						{
+							"key": "OWNER_NAME",
+							"value": "SIRAJ",
+							"type": "text"
+						},
+						{
+							"key": "OWNER_CONTACT",
+							"value": "8655508666",
+							"type": "text"
+						},
+						{
+							"key": "OWNER_ADDRESS",
+							"value": "201 A Wing, Arihant Tower, Saibaba Nagar, mira Road",
+							"type": "text"
+						},
+						{
+							"key": "OWN_AADHAR_UPLOAD",
+							"value": "abc.jpg",
+							"type": "text"
+						},
+						{
+							"key": "OWN_PAN_UPLOAD",
+							"value": "abc.jpg",
+							"type": "text"
+						},
+						{
+							"key": "DAILY_APP_BANDWIDTH",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "PLAN_ID",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "PLAN_EXPIRY_DATE",
+							"value": "2019-04-28T14:45:15",
+							"type": "text"
+						},
+						{
+							"key": "TOKEN",
+							"value": "ABCD",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://Wrenchub-env.eba-uxjrdtae.us-west-2.elasticbeanstalk.com/GARAGE/SaveProfile",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"GARAGE",
+						"SaveProfile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RetrieveProfile",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "TOKEN",
+							"value": "ABCD",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://Wrenchub-env.eba-uxjrdtae.us-west-2.elasticbeanstalk.com/GARAGE/RetrieveProfile",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"GARAGE",
+						"RetrieveProfile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RetrieveDashboardData",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://Wrenchub-env.eba-uxjrdtae.us-west-2.elasticbeanstalk.com/GARAGE/RetrieveDashboardData",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"GARAGE",
+						"RetrieveDashboardData"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RetrieveAllAppointment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "TOKEN",
+							"value": "ABCD",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://Wrenchub-env.eba-uxjrdtae.us-west-2.elasticbeanstalk.com/GARAGE/RetrieveAllAppointment",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"GARAGE",
+						"RetrieveAllAppointment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RetrieveAppointmentDetailById",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://Wrenchub-env.eba-uxjrdtae.us-west-2.elasticbeanstalk.com/GARAGE/RetrieveAppointmentDetailById?TOKEN=ABCD&APPOINTMENT_ID=1",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"GARAGE",
+						"RetrieveAppointmentDetailById"
+					],
+					"query": [
+						{
+							"key": "TOKEN",
+							"value": "ABCD"
+						},
+						{
+							"key": "APPOINTMENT_ID",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateAppointmentStatus",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "TOKEN",
+							"value": "ABCD",
+							"type": "text"
+						},
+						{
+							"key": "APPOINTMENT_ID",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "STATUS_ID",
+							"value": "3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://Wrenchub-env.eba-uxjrdtae.us-west-2.elasticbeanstalk.com/GARAGE/UpdateAppointmentStatus",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"GARAGE",
+						"UpdateAppointmentStatus"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SaveNewAd",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "TOKEN",
+							"value": "ABCD",
+							"type": "text"
+						},
+						{
+							"key": "MANUFACTURER_ID",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "MODEL_ID",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "YEAR",
+							"value": "2020",
+							"type": "text"
+						},
+						{
+							"key": "IMAGE",
+							"value": "abc.jpg",
+							"type": "text"
+						},
+						{
+							"key": "ASKING_PRICE",
+							"value": "20000",
+							"type": "text"
+						},
+						{
+							"key": "KMS_DRIVEN",
+							"value": "4000",
+							"type": "text"
+						},
+						{
+							"key": "IS_NEGOTIABLE",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "DESCRIPTION",
+							"value": "Good To use",
+							"type": "text"
+						},
+						{
+							"key": "TITLE",
+							"value": "Bajaj Avenger 220R",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://Wrenchub-env.eba-uxjrdtae.us-west-2.elasticbeanstalk.com/SaveNewAd",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"SaveNewAd"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FetchVehiclesDetailById",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "TOKEN",
+							"value": "ABCD",
+							"type": "text"
+						},
+						{
+							"key": "BUY_SELL_ID",
+							"value": "4",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://Wrenchub-env.eba-uxjrdtae.us-west-2.elasticbeanstalk.com/FetchVehiclesDetailById",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"FetchVehiclesDetailById"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FetchVehiclesList",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "TOKEN",
+							"value": "ABCD",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://Wrenchub-env.eba-uxjrdtae.us-west-2.elasticbeanstalk.com/FetchVehiclesList",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"FetchVehiclesList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FetchMyAds",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "TOKEN",
+							"value": "ABCD",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://Wrenchub-env.eba-uxjrdtae.us-west-2.elasticbeanstalk.com/FetchMyAds",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"FetchMyAds"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UploadFile",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "DOC",
+							"type": "file",
+							"src": "/C:/Users/Boltc/OneDrive/Pictures/Screenshots/2019-11-10.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://Wrenchub-env.eba-uxjrdtae.us-west-2.elasticbeanstalk.com/COMMON/uploadDocument",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"COMMON",
+						"uploadDocument"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "fetchManufacturer",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://Wrenchub-env.eba-uxjrdtae.us-west-2.elasticbeanstalk.com/COMMON/fetchManufacturer",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"COMMON",
+						"fetchManufacturer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "fetchModelByManufacturer",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://Wrenchub-env.eba-uxjrdtae.us-west-2.elasticbeanstalk.com/COMMON/fetchModelByManufacturer?MANUFACTURER_ID=1",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"COMMON",
+						"fetchModelByManufacturer"
+					],
+					"query": [
+						{
+							"key": "MANUFACTURER_ID",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

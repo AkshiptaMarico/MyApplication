@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/mi_home"
+        android:icon="@drawable/selector_mi_home"
+        android:title="@string/str_title_home"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/mi_shop"
+        android:icon="@drawable/selector_mi_shop"
+        android:title="@string/str_title_shop"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/mi_sell_or_buy"
+        android:icon="@drawable/selector_mi_sell_or_buy"
+        android:title="@string/str_title_sell_or_buy"
+        app:showAsAction="ifRoom"/>
+</menu>

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.myapplication.utils.SlidingUpPanelLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sothree="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sliding_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    sothree:umanoDragView="@+id/dragView"
+    sothree:umanoOverlay="true"
+    sothree:umanoPanelHeight="8dp"
+    sothree:umanoParallaxOffset="100dp"
+    sothree:umanoScrollableView="@+id/list"
+    sothree:umanoShadowHeight="4dp">
+    <!--<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--    xmlns:tools="http://schemas.android.com/tools"-->
+    <!--    android:layout_width="match_parent"-->
+    <!--    android:layout_height="match_parent"-->
+    <!--    android:background="#efefef"-->
+    <!--    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"-->
+    <!--    tools:context=".activities.OwnRequirementsActivity">-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/pale_lilac"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvCartTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@color/transparent"
+                    android:text="@string/str_own_requirement"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/light_blue"
+                    android:padding="10dp"
+                    android:text="@string/str_msg_own_requirements"
+                    android:textColor="@color/dark_slate_blue"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="@string/str_msg_please_upload_picture"
+                    android:textColor="@color/dark_slate_blue"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:id="@+id/llImages"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <ImageView
+                        android:id="@+id/ivORCamera"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/ic_org_camera_plus_light_blue_border"
+                        tools:ignore="ContentDescription" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvImages"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="@string/str_msg_brief_description"
+                    android:textColor="@color/dark_slate_blue"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/edtORDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/r1"
+                    android:importantForAutofill="no"
+                    android:inputType="text|textMultiLine"
+                    android:lines="4"
+                    android:maxLines="5"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    tools:ignore="LabelFor" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:padding="2dp">
+
+                    <ImageView
+                        android:id="@+id/ivORPlus"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="2dp"
+                        android:src="@drawable/ic_org_plus_lightblue_border"
+                        tools:ignore="ContentDescription,RtlHardcoded" />
+
+                    <TextView
+                        android:id="@+id/tvORQty"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toStartOf="@id/ivORPlus"
+                        android:layout_toLeftOf="@id/ivORPlus"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:text="1"
+                        android:textColor="@color/darkish_blue"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText,RtlHardcoded" />
+
+                    <ImageView
+                        android:id="@+id/ivORMinus"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="2dp"
+                        android:layout_toStartOf="@id/tvORQty"
+                        android:layout_toLeftOf="@id/tvORQty"
+                        android:src="@drawable/ic_org_minus_lightblue_border"
+                        tools:ignore="ContentDescription,RtlHardcoded" />
+
+                    <TextView
+                        android:id="@+id/tvORNumberOfItems"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_toStartOf="@id/ivORMinus"
+                        android:layout_toLeftOf="@id/ivORMinus"
+                        android:maxLines="3"
+                        android:text="@string/str_number_of_items"
+                        android:textColor="@color/dark_slate_blue"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        tools:ignore="RtlHardcoded" />
+                </RelativeLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+        <Button
+            android:id="@+id/btnORSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/rounded_cornor_blue"
+            android:paddingStart="40dp"
+            android:paddingLeft="40dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="40dp"
+            android:paddingRight="40dp"
+            android:paddingBottom="10dp"
+            android:text="@string/str_submit"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <include layout="@layout/bottom_sheet_your_requirments" />
+
+    <!--    <fragment-->
+    <!--        app:behavior_hideable="true"-->
+    <!--        app:behavior_peekHeight="0dp"-->
+    <!--        android:layout_marginTop="?attr/actionBarSize"-->
+    <!--        app:behavior_skipCollapsed="true"-->
+    <!--        android:id="@+id/filter_fragment"-->
+    <!--        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:name="behavior.sheet.bottom.BackdropFragment" />-->
+
+    <!--</androidx.coordinatorlayout.widget.CoordinatorLayout>-->
+</com.example.myapplication.utils.SlidingUpPanelLayout>

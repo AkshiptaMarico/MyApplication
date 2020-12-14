@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pale_lilac"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvCartTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_margin="15dp"
+        android:background="@color/transparent"
+        android:text="@string/str_my_cart"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tvCartItemCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvCartTitle"
+        android:background="@color/light_blue"
+        android:padding="15dp"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnCartPayNow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="@drawable/rounded_cornor_blue"
+        android:paddingStart="40dp"
+        android:paddingLeft="40dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="40dp"
+        android:paddingRight="40dp"
+        android:paddingBottom="10dp"
+        android:text="@string/str_pay_now"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/llCartTotal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_above="@id/btnCartPayNow"
+        android:background="@color/pale_lilac"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:gravity="center|start|left"
+            android:padding="10dp"
+            android:text="@string/str_total"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/tvCartTotalValue"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:gravity="center|end|right"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            tools:ignore="RtlHardcoded" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvCartItemList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/llCartTotal"
+        android:layout_below="@id/tvCartItemCount"
+        android:background="@color/pale_lilac"
+        android:scrollbarSize="8dp"
+        android:scrollbars="vertical" />
+
+</RelativeLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:background="@color/pale_lilac"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/tvCartItemName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center|start|left"
+            android:maxLines="3"
+            android:textColor="@color/darkish_blue"
+            android:textSize="15sp"
+            tools:ignore="RtlHardcoded" />
+
+        <ImageView
+            android:id="@+id/ivCartItemMinus"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="2dp"
+            android:padding="2dp"
+            android:src="@drawable/minus_orange_24_24"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/tvCartItemQuantity"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:maxLines="3"
+            android:textColor="@color/dark_slate_blue"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/ivCartItemPlus"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="2dp"
+            android:padding="2dp"
+            android:src="@drawable/add_orange_24_24"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/tvCartItemAmount"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center|end|right"
+            android:maxLines="3"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            tools:ignore="RtlHardcoded" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="2dp"
+        android:background="@color/light_blue" />
+</LinearLayout>
