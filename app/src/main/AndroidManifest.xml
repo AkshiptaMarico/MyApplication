@@ -41,6 +41,7 @@
         <activity android:name=".activities.CreateNewAdsActivity" />
         <activity android:name=".activities.MyAdsActivity" />
         <activity android:name=".activities.SellOrBuyBikeDetailsActivity" />
+        <activity android:name=".activities.ProductDetailsActivity" />
         <activity android:name=".activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

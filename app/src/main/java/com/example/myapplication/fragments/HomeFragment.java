@@ -11,11 +11,8 @@ import com.example.myapplication.R;
 
 public class HomeFragment extends Fragment {
 
-
     public HomeFragment() {
-
     }
-
 
     public static HomeFragment newInstance() {
         return new HomeFragment();

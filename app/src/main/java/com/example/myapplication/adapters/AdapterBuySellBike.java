@@ -70,7 +70,6 @@ public class AdapterBuySellBike extends RecyclerView.Adapter<AdapterBuySellBike.
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-
             ll1 = itemView.findViewById(R.id.ll1);
             ivProduct = itemView.findViewById(R.id.ivProduct1);
             ivEdit = itemView.findViewById(R.id.ivEdit);
